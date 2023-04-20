@@ -22,15 +22,15 @@ public class Autos {
     }
 
     public void corregir() {
-        if (this.auto != "volskwagen") {
-            System.out.println("La marca de auto es incorrecta");
+        if (this.kmh != 0) {
+            System.out.println("El auto es usado y tiene " + kmh + "km");
         } else {
-            System.out.println("La marca es Volskwagen y mide" + this.medidas);
+            System.out.println("El auto es nuevo y es un " + this.auto);
         }
     }
 
     public void agradecimiento() {
-        System.out.println("Gracias por probar este programa");
+        System.out.println("Es un " + auto + " tiene " + kmh + "km y mide " + medidas + "m");
     }
     
     public String getAuto(){

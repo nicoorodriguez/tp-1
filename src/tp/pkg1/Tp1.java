@@ -16,13 +16,27 @@ public class Tp1 {
      */
     public static void main(String[] args) {
         Autos Gol = new Autos("volksvagen",70000,(short)65);
-        Autos renault12 = new Autos("renault",86000,(short)709);
+        Autos renault12 = new Autos("renault",86000,(short)2);
         
         renault12.agradecimiento();
         
         Gol.corregir();
         
+        personas Juan = new personas ("Juan", 19, 45190456 );
+        
+        Licencia licenciaJ = new Licencia (19, 1998, "a1", "Mendoza");
+        
+        Juan.licencia();
+        Juan.setLicencia(licenciaJ);
+        
+        
+        Juan.getLicencia().datos();
     
+        Juan.getAutos().add(Gol);
+        Juan.getAutos().add(renault12);
+        
+        Juan.auto();
+        
     }
     
 }
